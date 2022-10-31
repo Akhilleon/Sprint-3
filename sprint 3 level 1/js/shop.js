@@ -91,6 +91,12 @@ function cleanCart() {
     console.log('CartList: ' + cartList);
     cart.splice(0, cart.length);
     console.log('Cart: ' + cart);
+    
+    const tableBody = document.getElementById("cart_list");
+    tableBody.innerHTML = "";
+    total = 0;
+    let totalCart = document.getElementById("total_price");
+    totalCart.innerHTML = total;
 }
 
 // Exercise 3
